@@ -1,0 +1,82 @@
+@import "scss/functions";
+@import url("https://fonts.googleapis.com/css?family=Nunito");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css");
+
+$font-family-base: "Nunito";
+$primary: #2f9ba4;
+$light: #fdfdfd;
+$min-contrast-ratio: 3;
+$font-size-base: 0.9rem;
+/*$line-height-base: 1.5;*/
+$border-radius: 0.6rem;
+$border-radius-sm: 0.4rem;
+$body-color: #374151;
+$card-cap-bg: #fafafa;
+$card-cap-padding-y: 0.5rem;
+$card-border-radius: 0.4rem;
+
+@import "scss/variables";
+@import "scss/mixins";
+@import "scss/root";
+
+@import "scss/bootstrap";
+
+a {
+  text-decoration: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+th {
+  text-transform: uppercase;
+  font-size: $font-size-base * 0.875;
+  color: $primary;
+}
+
+@media only screen and (max-width: 800px) {
+  #no-more-tables tbody,
+  #no-more-tables tr,
+  #no-more-tables td {
+    display: block;
+  }
+
+  #no-more-tables thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  #no-more-tables td {
+    position: relative;
+    padding-left: 25%;
+    border: none;
+    border-bottom: 1px solid #fff;
+  }
+
+  #no-more-tables td:before {
+    content: attr(data-title);
+    position: absolute;
+    left: 4px;
+    font-weight: bold;
+  }
+
+  #no-more-tables tr {
+    border-bottom: 1px solid #aaaa;
+  }
+}
+
+.btn {
+  width: 150px;
+}
+
+.btn-sm {
+  width: 80px;
+}

@@ -1,0 +1,21 @@
+@import "scss/functions";
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+$font-family-base: "Nunito";
+$primary: #1f2937;
+$secondary: #1f2937;
+$light: #f3f4f6;
+$min-contrast-ratio: 3;
+$font-size-base: 1rem;
+$line-height-base: 1.5;
+$border-radius: 0.7rem;
+$border-radius-sm: 0.5rem;
+$body-color: #374151;
+
+@import "scss/variables";
+@import "scss/mixins";
+@import "scss/root";
+
+@import "scss/bootstrap";
+
+a {text-decoration: none;}
